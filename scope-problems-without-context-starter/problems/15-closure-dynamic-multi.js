@@ -18,7 +18,12 @@ multiplyByFive(5); // returns 25
 
 ***********************************************************************/
 
-// your code here!
+function dynamicMultiply(num) {
+  let multiply = num
+  return function(factor) {
+    return multiply * factor
+  }
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
