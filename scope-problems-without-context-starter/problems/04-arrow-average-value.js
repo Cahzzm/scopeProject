@@ -11,7 +11,10 @@ arrowAvgValue([100, 60, 64]); // => 74.66666666666667
 ***********************************************************************/
 
 // your code here!
-
+const arrowAvgValue = arr => {
+  let sum = arr.reduce((el,sum = 0)=> (sum += el))
+  return sum / arr.length
+}
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
