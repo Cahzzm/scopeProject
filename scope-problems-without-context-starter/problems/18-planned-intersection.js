@@ -15,8 +15,18 @@ console.log(fame(["a", "f", "z", "b"])); // returns [ 'f', 'a' ]
 
 *******************************************************************************/
 
-// your code here
-
+function plannedIntersect(firstArr){
+  return function(secondArr){
+    let newArr = []
+    for(let i =0; i<firstArr.length; i++){
+      let el = firstArr[i]
+      if(secondArr.indexOf(el)>-1){
+        newArr.push(el)
+      }
+    }
+    return newArr
+  }
+}
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 
 try {
